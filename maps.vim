@@ -3,10 +3,6 @@ let mapleader = " "
 "configuracion de emmet-vim
 let g:user_emmet_leader_key=',' 	"mapeando la tecla lider por una coma, con esto se completa los tag con doble coma.
 
-"configuracion de nerdtree
-"mapeando el abrir y cerrar de nerdtree con nerdtreetoggle vemos los archivos en el arbol y podemos cerrarlo a la vez, map es la C mayuscula representa el
-"control y -n la tecla n lo que indica que realizará la siguiente funcion de excribir el comando NERDTreeToggle y CR significa ENTER.
-
 " map <silent> <C-n> :NERDTreeToggle<CR>
 
 nmap <Leader>s <Plug>(easymotion-2)
@@ -15,10 +11,6 @@ map <C-q> :q <CR>
 
 " Commentary 
 nnoremap <space>\ :Commentary <CR>
-
-nmap <C-[> :bnext <CR>
-nmap <C-]> :bprev <CR>
-
 
 " split resize
 nnoremap <Leader>- 10 <C-w>>
@@ -31,14 +23,11 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
 
-nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
+nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr><down>
 nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
 nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
@@ -51,6 +40,8 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 
 " Highlight the symbol and its references when holding the cursor.
@@ -92,14 +83,3 @@ noremap <C-p> :Files <CR>
 noremap <silent> <C-a> :Buffers<CR>
 " nnoremap <silent> <C-A> :Windows<CR>
 " nnoremap <silent> <leader>; :BLines<CR>
-nnoremap <silent> <C-F> :BLines<CR>
-
-
-
-" Telescope
-nnoremap <leader>ff :Telescope find_files <CR>
-nnoremap <leader>fg :Telescope live_grep <CR>
-nnoremap <leader>fb <cmd>Telescope buffers <CR>
-nnoremap <leader>fh <cmd>Telescope help_tags<CR>
-
-
