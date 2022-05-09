@@ -32,8 +32,8 @@ let g:vim_json_syntax_conceal = 0
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_conceal_code_blocks = 0
 
-let NERDTreeQuitOnOpen = 1
-let g:NERDTreeWinSize = 50
+" let NERDTreeQuitOnOpen = 1
+" let g:NERDTreeWinSize = 50
 
 " Load the configuration for the template strings syntax support in the TS files
 " autocmd FileType typescript JsPreTmpl html

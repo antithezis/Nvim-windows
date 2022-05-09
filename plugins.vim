@@ -2,14 +2,13 @@
 
 call plug#begin('~/AppData/Local/nvim/plugged') 	"directorio donde se van a instalar los plugins
 
-" Plug 'joshdick/onedark.vim' 		"tema
+ Plug 'joshdick/onedark.vim' 		"temas
 Plug 'Yggdroot/indentLine' 		"indentacion
 Plug 'mattn/emmet-vim' 			"emmet para diseño web
-Plug 'vim-airline/vim-airline'		"diseño de la barra en la cual se muestran los modos, la linea, etc.
-Plug 'vim-airline/vim-airline-themes'	"temas para el vim-airline
-Plug 'preservim/nerdtree'		"gestor de archivos en forma de arbol.
-Plug 'christoomey/vim-tmux-navigator'	"poder navegar entre archivos abiertos
-Plug 'jiangmiao/auto-pairs'		"autocompletado de llaves, corchetes, etc.
+" Plug 'vim-airline/vim-airline'		"diseño de la barra en la cual se muestran los modos, la linea, etc.
+" Plug 'vim-airline/vim-airline-themes'	"temas para el vim-airline
+" Plug 'preservim/nerdtree'		"gestor de archivos en forma de arbol.
+Plug 'christoomey/vim-tmux-navigator'	"poder navegar entre archivos abiertosPlug 'jiangmiao/auto-pairs'		"autocompletado de llaves, corchetes, etc.
 Plug 'neoclide/coc.nvim', {'branch': 'release'}	"autocompletado inteligente; Puede requerir 'npm install' en la carpeta  coc de plugged
 Plug 'easymotion/vim-easymotion'
 Plug 'alvan/vim-closetag'

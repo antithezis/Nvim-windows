@@ -21,7 +21,7 @@ so ~/AppData/Local/nvim/maps.vim
 
 "configuracion del tema
 set termguicolors 			"activa el true color en la terminal
-" colorscheme onedark 			"activar el tema onedark
+colorscheme onedark 			"activar el tema onedark
 
 "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 "configuracion por defecto de coc

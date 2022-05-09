@@ -7,7 +7,7 @@ let g:user_emmet_leader_key=',' 	"mapeando la tecla lider por una coma, con esto
 "mapeando el abrir y cerrar de nerdtree con nerdtreetoggle vemos los archivos en el arbol y podemos cerrarlo a la vez, map es la C mayuscula representa el
 "control y -n la tecla n lo que indica que realizará la siguiente funcion de excribir el comando NERDTreeToggle y CR significa ENTER.
 
-map <silent> <C-n> :NERDTreeToggle<CR>
+" map <silent> <C-n> :NERDTreeToggle<CR>
 
 nmap <Leader>s <Plug>(easymotion-2)
 nmap <C-w> :w <CR>

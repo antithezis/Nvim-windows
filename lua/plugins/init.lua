@@ -12,7 +12,11 @@ return require('packer').startup(function ()
       },
       config = require "plugins.configs.telescope",
     }
-  
+ 
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
     use { "nvim-telescope/telescope-file-browser.nvim" }
   
     use { 'ibhagwan/fzf-lua',
@@ -35,6 +39,7 @@ return require('packer').startup(function ()
             "neovim/nvim-lspconfig",
             "jose-elias-alvarez/typescript.nvim",
         },
+        config = require "plugins.configs.lsp"
     }
   
     use {
@@ -52,6 +57,24 @@ return require('packer').startup(function ()
         },
         config = require "plugins.configs.cmp",
     }  
+    
+    use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    },
+    config = require "plugins.configs.nvim-tree",
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
+  use {
+  'lewis6991/gitsigns.nvim',
+  config = function()
+    require('gitsigns').setup()
+  end
+  -- tag = 'release' -- To use the latest release
+}
+
+
 
  end)
 

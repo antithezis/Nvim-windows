@@ -14,3 +14,4 @@ vim.api.nvim_set_keymap(
 )
 
 mapper('n','<Leader>fd', ':Telescope file_browser <CR>')
+mapper('n', '<C-n>', ': NvimTreeToggle <CR>')
