@@ -5,7 +5,7 @@ end
 vim.g.mapleader = ' '
 
 
-mapper('n', '<C-a>', 'ggVG')
+mapper('n', '<C-a>', 'gg<S-v>G')
 mapper('n', '<C-d>', ':t. <CR>')
 
 mapper('n','<Leader>fd', ':Telescope file_browser <CR>')
@@ -32,4 +32,3 @@ mapper("n", "H", "<cmd>lua require('telescope.builtin').lsp_code_actions(require
 
 mapper('n', '<leader>r', ':NvimTreeRefresh <CR>')
 mapper('n', '<leader>n', ':NvimTreeFindFile <CR>')
-

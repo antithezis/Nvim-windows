@@ -1,7 +1,7 @@
 vim.g.completeopt="menu,menuone,noselect, noinsert"
 
 local ok, cmp = pcall(require, "cmp")
-
+local luasnip = require("luasnip")
 
 if not ok then
     return
@@ -61,7 +61,8 @@ cmp.setup {
     },
     snippet = {
         expand = function(args)
-            vim.fn["vsnip#anonymous"](args.body)
+            --vim.fn["vsnip#anonymous"](args.body)
+            luasnip.lsp_expand(arg.body)
         end,
     },
     mapping = {
@@ -101,6 +102,7 @@ cmp.setup {
         },
     },
     sources = {
+        { name = "luasnip" },
         { name = "nvim_lsp" },
         { name = "nvim_lua" },
         { name = "vsnip" },
@@ -139,5 +141,8 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
     capabilities = capabilities
   }
   require'lspconfig'['jsonls'].setup {
+    capabilities = capabilities
+  } 
+  require'lspconfig'['sumneko'].setup {
     capabilities = capabilities
   }

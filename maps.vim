@@ -79,7 +79,7 @@ xmap <silent> <C-s> <Plug>(coc-range-select)
 
 
 " FuzzyFinder
-noremap <C-p> :Files <CR>
-noremap <silent> <C-a> :Buffers<CR>
+" noremap <C-p> :Files <CR>
+" noremap <silent> <C-a> :Buffers<CR>
 " nnoremap <silent> <C-A> :Windows<CR>
 " nnoremap <silent> <leader>; :BLines<CR>
