@@ -1,7 +1,6 @@
 vim.g.completeopt="menu,menuone,noselect, noinsert"
 
 local ok, cmp = pcall(require, "cmp")
-local luasnip = require("luasnip")
 
 if not ok then
     return
@@ -21,7 +20,7 @@ local icons = {
     Unit = "塞",
     Value = "",
     Enum = "",
-    Keyword = "廓",
+    Keyword = "廓 ",
     Snippet = "",
     Color = "",
     File = "",
@@ -62,7 +61,7 @@ cmp.setup {
     snippet = {
         expand = function(args)
             --vim.fn["vsnip#anonymous"](args.body)
-            luasnip.lsp_expand(arg.body)
+            require'luasnip'.lsp_expand(arg.body)
         end,
     },
     mapping = {
@@ -129,6 +128,8 @@ cmp.setup.cmdline(":", {
     }),
 })
 
+
+
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
   require'lspconfig'['tsserver'].setup {
@@ -143,4 +144,3 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
   require'lspconfig'['jsonls'].setup {
     capabilities = capabilities
   } 
- 

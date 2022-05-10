@@ -47,6 +47,22 @@ return require('packer').startup(function ()
   }
 
   use {
+      "hrsh7th/nvim-cmp",
+      requires = {
+          "hrsh7th/cmp-nvim-lsp",
+          "hrsh7th/cmp-nvim-lua",
+          "hrsh7th/cmp-buffer",
+          "hrsh7th/cmp-path",
+          "hrsh7th/cmp-cmdline",
+          "hrsh7th/cmp-nvim-lsp-document-symbol",
+          "hrsh7th/cmp-vsnip",
+          "hrsh7th/vim-vsnip",
+          "hrsh7th/cmp-nvim-lsp-signature-help",
+      },
+      config = require "plugins.configs.cmp",
+  }
+
+  use {
     "L3MON4D3/LuaSnip",
     config = require "plugins.configs.luasnip"
   }
@@ -62,21 +78,6 @@ return require('packer').startup(function ()
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
-  use {
-      "hrsh7th/nvim-cmp",
-      requires = {
-          "hrsh7th/cmp-nvim-lsp",
-          "hrsh7th/cmp-nvim-lua",
-          "hrsh7th/cmp-buffer",
-          "hrsh7th/cmp-path",
-          "hrsh7th/cmp-cmdline",
-          "hrsh7th/cmp-nvim-lsp-document-symbol",
-          "hrsh7th/cmp-vsnip",
-          "hrsh7th/vim-vsnip",
-          "hrsh7th/cmp-nvim-lsp-signature-help",
-      },
-      config = require "plugins.configs.cmp",
-  }
   use {
     'lewis6991/gitsigns.nvim',
     config = function()

@@ -1,3 +1,4 @@
+
 local ls = require("luasnip") --{{{
 local s = ls.s
 local i = ls.i
@@ -13,7 +14,7 @@ local rep = require("luasnip.extras").rep
 
 local snippets, autosnippets = {}, {} --}}}
 
-local group = vim.api.nvim_create_augroup("Javascript Snippets", { clear = true })
+local group = vim.api.nvim_create_augroup("TypeScript Snippets", { clear = true })
 local file_pattern = "*.ts"
 
 local function cs(trigger, nodes, opts) --{{{
