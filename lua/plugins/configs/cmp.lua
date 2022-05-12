@@ -1,5 +1,6 @@
 vim.g.completeopt="menu,menuone,noselect, noinsert"
 
+local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 local ok, cmp = pcall(require, "cmp")
 
 if not ok then
@@ -20,7 +21,7 @@ local icons = {
     Unit = "塞",
     Value = "",
     Enum = "",
-    Keyword = "廓 ",
+    Keyword = "廓",
     Snippet = "",
     Color = "",
     File = "",

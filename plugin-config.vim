@@ -32,9 +32,6 @@ let g:vim_json_syntax_conceal = 0
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_conceal_code_blocks = 0
 
-" let NERDTreeQuitOnOpen = 1
-" let g:NERDTreeWinSize = 50
-
 " Load the configuration for the template strings syntax support in the TS files
 " autocmd FileType typescript JsPreTmpl html
 " autocmd FileType typescript syn clear foldBraces
@@ -62,3 +59,8 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 
+" markdown viwer config
+
+let g:mkdp_auto_start = 1
+let g:mkdp_auto_close = 1
+let g:mkdp_refresh_slow = 1

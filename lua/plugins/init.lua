@@ -4,8 +4,10 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function ()
   -- tag = 'release' -- To use the latest release
 
- use 'jiangmiao/auto-pairs'
-  
+ use {
+   'windwp/nvim-autopairs',
+    config = require "plugins.configs.autopairs"
+}  
   use {
       "nvim-telescope/telescope.nvim",
       requires = {
