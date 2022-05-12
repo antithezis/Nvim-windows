@@ -1,43 +1,12 @@
 so ~/AppData/Local/nvim/lua/init.lua
 
-"CONFIGURACIONES BASICAS 
-set number 				      " muestra los numeros de cada linea en la parte izquierda 
-set relativenumber 			" la distribucion de los numeros en lineas de manera relativa
-set mouse=a 				    " permite la interaccion con el mouse
-set noshowmode				  " me deja de mostrar el modo en el que estamos 'normal, insert, visual, etc'
-syntax enable 				  " activa el coloreado de sintaxis en algunos tipos de archivos como html, c, c++
-set encoding=utf-8 			" permite setear la codificación de archivos para aceptar caracteres especiales
-set sw=2 				        " la indentación genera 2 espacios
-set nowrap				      " el texto en una linea no baja a la siguiente, solo continua en la misma hasta el infinito.
-"set noswapfile				  " para evitar el mensaje que sale al abrir algunos archivos sobre swap.
-set clipboard=unnamed		" para poder utilizar el portapapeles del sistema operativo 'esto permite poder copiar y pegar desde cualquier parte a nvim y viceversa.	
-set showcmd
-set showmatch
-set modifiable
-
 so ~/AppData/Local/nvim/plugins.vim
 so ~/AppData/Local/nvim/plugin-config.vim
 so ~/AppData/Local/nvim/maps.vim
 
-"configuracion del tema
-set termguicolors 			"activa el true color en la terminal
-colorscheme onedark 			"activar el tema onedark
+" colorscheme onedark 			"activar el tema onedark
 
 "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-"configuracion por defecto de coc
-" TextEdit might fail if hidden is not set.
-set hidden
-
-" Some servers have issues with backup files, see #649.
-set nobackup
-set nowritebackup
-
-" Give more space for displaying messages.
-set cmdheight=2
-
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
-set updatetime=300
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c

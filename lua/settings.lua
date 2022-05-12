@@ -15,6 +15,9 @@ vim.cmd [[set fcs=eob:\ ]]
 vim.cmd [[filetype plugin indent on]]
 
 local options = {
+
+    writebackup = false,
+    wrap = true,
     termguicolors = true,
     fileencoding = "utf-8",
     backup = false,
@@ -48,6 +51,8 @@ local options = {
     laststatus = 3,
     updatetime = 250,
     background = "dark",
+    showmatch = true,
+    modifiable = true
 }
 
 vim.opt.shortmess:append "c"
