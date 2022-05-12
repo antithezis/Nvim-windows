@@ -2,25 +2,19 @@
 
 call plug#begin('~/AppData/Local/nvim/plugged') 	"directorio donde se van a instalar los plugins
 
- Plug 'joshdick/onedark.vim' 		"temas
+Plug 'joshdick/onedark.vim' 		"temas
 Plug 'Yggdroot/indentLine' 		"indentacion
 Plug 'mattn/emmet-vim' 			"emmet para diseño web
-" Plug 'vim-airline/vim-airline'		"diseño de la barra en la cual se muestran los modos, la linea, etc.
-" Plug 'vim-airline/vim-airline-themes'	"temas para el vim-airline
-" Plug 'preservim/nerdtree'		"gestor de archivos en forma de arbol.
 Plug 'christoomey/vim-tmux-navigator'	"poder navegar entre archivos abiertos
 Plug 'neoclide/coc.nvim', {'branch': 'release'}	"autocompletado inteligente; Puede requerir 'npm install' en la carpeta  coc de plugged
 Plug 'easymotion/vim-easymotion'
 Plug 'alvan/vim-closetag'
 Plug 'sheerun/vim-polyglot'
-Plug 'ryanoasis/vim-devicons' " Adds filetype-specific icons to NERDTree files and folders
 Plug 'nvim-lua/completion-nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'https://github.com/leafgarland/typescript-vim'
-" Plug 'https://github.com/scrooloose/nerdtree-project-plugin'
 " Plug 'tribela/vim-transparent'
 " Plug 'SirVer/ultisnips'
-
 
 Plug 'tpope/vim-commentary'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}  " To visualize markdown on navigator
@@ -49,10 +43,7 @@ Plug 'https://github.com/vim-syntastic/syntastic'
 " Use :Ng command in Vim
 Plug 'https://github.com/bdauria/angular-cli.vim'
 
-
 "IDE 
-"Plug 'junegunn/fzf'
-"Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-signify'
 Plug 'scrooloose/nerdcommenter'
 
