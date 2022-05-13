@@ -1,6 +1,5 @@
 vim.g.completeopt="menu,menuone,noselect, noinsert"
 
-local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 local ok, cmp = pcall(require, "cmp")
 
 if not ok then
@@ -62,7 +61,8 @@ cmp.setup {
     snippet = {
         expand = function(args)
             --vim.fn["vsnip#anonymous"](args.body)
-            require'luasnip'.lsp_expand(arg.body)
+
+            -- require'luasnip'.lsp_expand(arg.body)
         end,
     },
     mapping = {

@@ -66,3 +66,4 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 nmap <silent> <C-s> <Plug>(coc-range-select)
 xmap <silent> <C-s> <Plug>(coc-range-select)
 
+

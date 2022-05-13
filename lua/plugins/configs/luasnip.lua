@@ -1,4 +1,3 @@
-
 local ls = require("luasnip") --{{{
 
 -- require("luasnip.loaders.from_vscode").lazy_load()
@@ -7,6 +6,8 @@ require("luasnip.loaders.from_lua").load({ paths = "~/AppData/Local/nvim/lua/sni
 require("luasnip").config.setup({ store_selection_keys = "<A-p>" })
 
 vim.cmd([[command! LuaSnipEdit :lua require("luasnip.loaders.from_lua").edit_snippet_files()]]) --}}}
+
+
 
 -- Virtual Text{{{
 local types = require("luasnip.util.types")
@@ -56,6 +57,7 @@ vim.keymap.set({ "i", "s" }, "<a-k>", function()
 		ls.jump(1)
 	end
 end, { silent = true })
+
 vim.keymap.set({ "i", "s" }, "<a-j>", function()
 	if ls.jumpable(-1) then
 		ls.jump(-1)
