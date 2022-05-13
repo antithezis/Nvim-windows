@@ -9,9 +9,7 @@ let g:closetag_filenames = '*.html, *.js, *.jsx, *.ts, *.tsx'
 autocmd FileType typescript,html call angular_cli#init()`
 
 autocmd FileType python let b:coc_suggest_disable = 1
-autocmd FileType javascript let b:coc_suggest_disable = 1
-autocmd FileType typescript let b:coc_suggest_disable = 1
-autocmd FileType scss setl iskeyword+=@-@
+" autocmd FileType scss setl iskeyword+=@-@
 
 
 "configuracion de vim-airline
@@ -22,15 +20,6 @@ let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline#extensions#tabline#right_alt_sep = ''
 let g:airline#extensions#tabline#right_alt_sep = ''
-
-autocmd FileType typescript, javascript, python  :call AutoPairsInit()`
-
-" Show hiden elemets markdown
-
-let g:indentLine_concealcursor = ""
-let g:vim_json_syntax_conceal = 0
-let g:vim_markdown_conceal = 0
-let g:vim_markdown_conceal_code_blocks = 0
 
 " Load the configuration for the template strings syntax support in the TS files
 " autocmd FileType typescript JsPreTmpl html
@@ -60,7 +49,12 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 
 
 " markdown viwer config
-
 let g:mkdp_auto_start = 1
 let g:mkdp_auto_close = 1
 let g:mkdp_refresh_slow = 1
+
+" Show hiden elemets markdown
+let g:indentLine_concealcursor = ""
+let g:vim_json_syntax_conceal = 0
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0

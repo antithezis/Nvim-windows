@@ -3,19 +3,8 @@ let mapleader = " "
 "configuracion de emmet-vim
 let g:user_emmet_leader_key=',' 	"mapeando la tecla lider por una coma, con esto se completa los tag con doble coma.
 
-" map <silent> <C-n> :NERDTreeToggle<CR>
-
-nmap <Leader>s <Plug>(easymotion-2)
-nmap <C-w> :w <CR>
-map <C-q> :q <CR> 
-
 " Commentary 
 nnoremap <space>\ :Commentary <CR>
-
-" split resize
-nnoremap <Leader>- 10 <C-w>>
-nnoremap <Leader>= 10 <C-w><
-
 
 "Remap keys fot GoTos
 nmap <silent> gd <Plug>(coc-definition)
@@ -27,7 +16,7 @@ nmap <silent> gr <Plug>(coc-references)
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
 
-nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr><down>
+nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
 nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
 nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
@@ -77,9 +66,3 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 nmap <silent> <C-s> <Plug>(coc-range-select)
 xmap <silent> <C-s> <Plug>(coc-range-select)
 
-
-" FuzzyFinder
-" noremap <C-p> :Files <CR>
-" noremap <silent> <C-a> :Buffers<CR>
-" nnoremap <silent> <C-A> :Windows<CR>
-" nnoremap <silent> <leader>; :BLines<CR>

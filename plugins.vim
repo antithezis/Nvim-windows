@@ -7,7 +7,6 @@ Plug 'Yggdroot/indentLine' 		"indentacion
 Plug 'mattn/emmet-vim' 			"emmet para diseño web
 Plug 'christoomey/vim-tmux-navigator'	"poder navegar entre archivos abiertos
 Plug 'neoclide/coc.nvim', {'branch': 'release'}	"autocompletado inteligente; Puede requerir 'npm install' en la carpeta  coc de plugged
-Plug 'easymotion/vim-easymotion'
 Plug 'alvan/vim-closetag'
 Plug 'sheerun/vim-polyglot'
 Plug 'nvim-lua/completion-nvim'

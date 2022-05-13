@@ -15,7 +15,6 @@ vim.cmd [[set fcs=eob:\ ]]
 vim.cmd [[filetype plugin indent on]]
 
 local options = {
-
     writebackup = false,
     wrap = true,
     termguicolors = true,
