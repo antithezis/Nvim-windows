@@ -22,7 +22,12 @@ return require('packer').startup(function ()
 
     use {
       'nvim-treesitter/nvim-treesitter',
-      run = ':TSUpdate'
+      requires = {
+        "windwp/nvim-ts-autotag",
+        "p00f/nvim-ts-rainbow",
+      },
+      run = ':TSUpdate',
+      config = require "plugins.configs.treesitter"
   }
 
   use {
@@ -38,6 +43,8 @@ return require('packer').startup(function ()
     -- optional for icon support
     requires = { 'kyazdani42/nvim-web-devicons' }
   }  
+
+  -- UI
 
   use { "rmehri01/onenord.nvim" }
   use { "goolord/alpha-nvim", config = require "plugins.configs.alpha" }

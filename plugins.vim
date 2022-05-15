@@ -2,7 +2,7 @@
 
 call plug#begin('~/AppData/Local/nvim/plugged') 	"directorio donde se van a instalar los plugins
 
-Plug 'joshdick/onedark.vim' 		"temas
+" Plug 'joshdick/onedark.vim' 		"temas
 Plug 'Yggdroot/indentLine' 		"indentacion
 Plug 'mattn/emmet-vim' 			"emmet para diseño web
 Plug 'christoomey/vim-tmux-navigator'	"poder navegar entre archivos abiertos

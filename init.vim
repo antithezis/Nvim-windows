@@ -4,7 +4,7 @@ so ~/AppData/Local/nvim/plugins.vim
 so ~/AppData/Local/nvim/plugin-config.vim
 so ~/AppData/Local/nvim/maps.vim
 
-colorscheme onedark 			"activar el tema onedark
+" colorscheme onedark 			"activar el tema onedark
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c

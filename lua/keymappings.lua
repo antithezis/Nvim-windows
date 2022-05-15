@@ -33,11 +33,11 @@ mapper('n',  '<C-b>', ':vsplit <CR>')
 mapper('n', '<C-w>', ':w <CR>')
 mapper('n', '<C-q>', ':q <CR>')
 -- mapper('n', '<Leader>\ ', ':Commentary <CR>')
-mapper('n', '<Leader>>', '10 <C-w>>')
-mapper('n', '<Leader><', '10 <C-w><')
+mapper('n', '<Leader>>', '12 <C-w>>')
+mapper('n', '<Leader><', '12 <C-w><')
 
+mapper('n', '<C-z>', ':TSToggle highlight <CR>')
 
-
--- nnoremap <Leader>- 10 <C-w>>
--- nnoremap <Leader>= 10 <C-w><
+-- nnoremap <Leader>- 12 <C-w>>
+-- nnoremap <Leader>= 12 <C-w><
 
