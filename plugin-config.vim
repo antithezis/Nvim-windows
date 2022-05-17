@@ -2,6 +2,8 @@ let g:closetag_filenames = '*.html, *.js, *.jsx, *.ts, *.tsx'
 
 " let g:kite_supported_languages = ['javascript', 'python']
 
+autocmd BufNewFile *.html Or ~/AppData/Local/nvim/templates/html.skel
+
 "Coc 
 " command! -nargs = 0 Prettier: CocCommand prettier.formatFile
 " nnoremap <C-D> :Prettier<CR>

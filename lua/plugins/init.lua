@@ -92,6 +92,9 @@ return require('packer').startup(function ()
     config = function()
     require('gitsigns').setup()
   end
-  -- tag = 'release' -- To use the latest release
+   -- tag = 'release' -- To use the latest release 
   }
-  end)
+
+  use 'turbio/bracey.vim'
+  
+end)

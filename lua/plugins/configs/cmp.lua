@@ -60,10 +60,8 @@ cmp.setup {
     },
     snippet = {
         expand = function(args)
-            --vim.fn["vsnip#anonymous"](args.body)
-
-            -- require'luasnip'.lsp_expand(arg.body)
-        end,
+             require'luasnip'.lsp_expand(args.body)
+        end
     },
     mapping = {
         ["<C-d>"] = cmp.mapping.scroll_docs(-4),
@@ -145,3 +143,7 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
   require'lspconfig'['jsonls'].setup {
     capabilities = capabilities
   } 
+  require'lspconfig'['eslint'].setup {
+    capabilities = capabilities
+  } 
+

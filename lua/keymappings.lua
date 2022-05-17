@@ -4,15 +4,23 @@ end
 
 vim.g.mapleader = ' '
 
+-- Esc as Tab and vice versa
+mapper('i', '<Leader><Leader>', '<Esc>')
+
+
 -- Text editor
 mapper('n', '<C-a>', 'gg<S-v>G')
 mapper('n', '<leader>d', ':t. <CR>')
+mapper('n', 'C-W>', ':w! <CR>')
+mapper('n', 'C-Q>', ':q! <CR>')
+
+
 
 -- Telescope
-mapper('n', '<leader>ff', ':Telescope find_files <CR>')
-mapper('n', '<leader>fg', ':Telescope live_grep <CR>')
+mapper('n', '<Leader>ff', ':Telescope find_files <CR>')
+mapper('n', '<Leader>fg', ':Telescope live_grep <CR>')
 mapper('n', '<C-]>', ':Telescope buffers <CR>')
-mapper('n', '<leader>fh',':Telescope help_tags <CR>')
+mapper('n', '<Leader>fh',':Telescope help_tags <CR>')
 
 mapper('n','<Leader>fd', ':Telescope file_browser <CR>')
 mapper("n", "<C-f>", "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>") -- search lines in current buffer
@@ -27,8 +35,8 @@ mapper("n", "H", "<cmd>lua require('telescope.builtin').lsp_code_actions(require
 -- nvim-tree
 
 mapper('n', '<C-n>', ':NvimTreeToggle <CR>')
-mapper('n', '<leader>r', ':NvimTreeRefresh <CR>')
-mapper('n', '<leader>n', ':NvimTreeFindFile <CR>')
+mapper('n', '<Leader>r', ':NvimTreeRefresh <CR>')
+mapper('n', '<Leader>n', ':NvimTreeFindFile <CR>')
 mapper('n',  '<C-b>', ':vsplit <CR>')
 mapper('n', '<C-w>', ':w <CR>')
 mapper('n', '<C-q>', ':q <CR>')
@@ -37,6 +45,12 @@ mapper('n', '<Leader>>', '12 <C-w>>')
 mapper('n', '<Leader><', '12 <C-w><')
 
 mapper('n', '<C-z>', ':TSToggle highlight <CR>')
+
+-- Bracey config (Live server) --
+
+mapper('n', '<Leader>bs', ': Bracey <CR>')
+mapper('n', '<Leader>bp', ': BraceyStop <CR>')
+mapper('n', '<Leader>br', ': BraceyReload <CR>')
 
 -- nnoremap <Leader>- 12 <C-w>>
 -- nnoremap <Leader>= 12 <C-w><
