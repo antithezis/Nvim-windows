@@ -1,4 +1,3 @@
-
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function ()
@@ -96,5 +95,6 @@ return require('packer').startup(function ()
   }
 
   use 'turbio/bracey.vim'
+  use 'sbdchd/neoformat'
   
 end)

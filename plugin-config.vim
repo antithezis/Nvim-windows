@@ -13,6 +13,10 @@ autocmd FileType typescript,html call angular_cli#init()`
 autocmd FileType python let b:coc_suggest_disable = 1
 " autocmd FileType scss setl iskeyword+=@-@
 
+autocmd BufWritePre *.js :CocCommand prettier.formatFile
+autocmd BufWritePre *.jsx :CocCommand prettier.formatFile
+autocmd BufWritePre *.ts :CocCommand prettier.formatFile
+autocmd BufWritePre *.css :CocCommand prettier.formatFile
 
 "configuracion de vim-airline
 let g:airline#extensions#tabline#enabled = 1	"muestra la linea de pestaña en la que estamos buffer
