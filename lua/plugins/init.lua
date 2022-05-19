@@ -95,6 +95,5 @@ return require('packer').startup(function ()
   }
 
   use 'turbio/bracey.vim'
-  use 'sbdchd/neoformat'
   
 end)
