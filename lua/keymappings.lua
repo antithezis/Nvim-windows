@@ -4,17 +4,11 @@ end
 
 vim.g.mapleader = ' '
 
--- Esc as Tab and vice versa
-mapper('i', '<Leader><Leader>', '<Esc>')
-
+mapper('i', '<Leader><Leader>', '<cmd>w <CR> <Esc>')
 
 -- Text editor
 mapper('n', '<C-a>', 'gg<S-v>G')
 mapper('n', '<leader>d', ':t. <CR>')
-mapper('n', 'C-W>', ':w! <CR>')
-mapper('n', 'C-Q>', ':q! <CR>')
-
-
 
 -- Telescope
 mapper('n', '<Leader>ff', ':Telescope find_files <CR>')
@@ -51,7 +45,3 @@ mapper('n', '<C-z>', ':TSToggle highlight <CR>')
 mapper('n', '<Leader>bs', ': Bracey <CR>')
 mapper('n', '<Leader>bp', ': BraceyStop <CR>')
 mapper('n', '<Leader>br', ': BraceyReload <CR>')
-
--- nnoremap <Leader>- 12 <C-w>>
--- nnoremap <Leader>= 12 <C-w><
-

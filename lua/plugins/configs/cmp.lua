@@ -20,7 +20,7 @@ local icons = {
     Unit = "塞",
     Value = "",
     Enum = "",
-    Keyword = "廓",
+    Keyword = "",
     Snippet = "",
     Color = "",
     File = "",
@@ -144,6 +144,9 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
     capabilities = capabilities
   } 
   require'lspconfig'['eslint'].setup {
+    capabilities = capabilities
+  } 
+  require'lspconfig'['cssls'].setup {
     capabilities = capabilities
   } 
 
