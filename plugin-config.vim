@@ -17,15 +17,7 @@ autocmd BufWritePre *.js :CocCommand prettier.formatFile
 autocmd BufWritePre *.jsx :CocCommand prettier.formatFile
 autocmd BufWritePre *.ts :CocCommand prettier.formatFile
 autocmd BufWritePre *.css :CocCommand prettier.formatFile
-
-"configuracion de vim-airline
-let g:airline#extensions#tabline#enabled = 1	"muestra la linea de pestaña en la que estamos buffer
-let g:airline#extensions#tabline#formatter = 'unique_tail'	"muestra solo el nombre del archivo que estamos modificando
-let g:airline_theme='onedark'	"el tema de airline
-let g:airline#extensions#tabline#left_sep = ''
-let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#right_alt_sep = ''
-let g:airline#extensions#tabline#right_alt_sep = ''
+autocmd BufWritePre *.html :CocCommand prettier.formatFile
 
 " Load the configuration for the template strings syntax support in the TS files
 " autocmd FileType typescript JsPreTmpl html

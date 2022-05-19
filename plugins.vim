@@ -2,7 +2,6 @@
 
 call plug#begin('~/AppData/Local/nvim/plugged') 	"directorio donde se van a instalar los plugins
 
-" Plug 'joshdick/onedark.vim' 		"temas
 Plug 'Yggdroot/indentLine' 		"indentacion
 Plug 'mattn/emmet-vim' 			"emmet para diseño web
 Plug 'christoomey/vim-tmux-navigator'	"poder navegar entre archivos abiertos
@@ -12,8 +11,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'nvim-lua/completion-nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'https://github.com/leafgarland/typescript-vim'
-" Plug 'tribela/vim-transparent'
-" Plug 'SirVer/ultisnips'
 
 Plug 'tpope/vim-commentary'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}  " To visualize markdown on navigator
