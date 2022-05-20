@@ -1,6 +1,5 @@
 let mapleader = " "
 
-"configuracion de emmet-vim
 let g:user_emmet_leader_key=',' 	"mapeando la tecla lider por una coma, con esto se completa los tag con doble coma.
 
 " Commentary 

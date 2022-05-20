@@ -4,7 +4,7 @@ end
 
 vim.g.mapleader = ' '
 
-mapper('i', '<Leader><Leader>', '<cmd>w <CR> <Esc>')
+mapper('i', '<Leader><Leader>', '<cmd>w <CR><Esc>')
 
 -- Text editor
 mapper('n', '<C-a>', 'gg<S-v>G')
@@ -31,12 +31,12 @@ mapper("n", "H", "<cmd>lua require('telescope.builtin').lsp_code_actions(require
 mapper('n', '<C-n>', ':NvimTreeToggle <CR>')
 mapper('n', '<Leader>r', ':NvimTreeRefresh <CR>')
 mapper('n', '<Leader>n', ':NvimTreeFindFile <CR>')
-mapper('n',  '<C-b>', ':vsplit <CR>')
+-- mapper('n',  '<C-b>', ':vsplit <CR>')
 mapper('n', '<C-w>', ':w <CR>')
 mapper('n', '<C-q>', ':q <CR>')
 -- mapper('n', '<Leader>\ ', ':Commentary <CR>')
-mapper('n', '<Leader>>', '12 <C-w>>')
-mapper('n', '<Leader><', '12 <C-w><')
+mapper('n', '<Leader><Right>', '20 <C-w>>')
+mapper('n', '<Leader><Left>', '20 <C-w><')
 
 mapper('n', '<C-z>', ':TSToggle highlight <CR>')
 
