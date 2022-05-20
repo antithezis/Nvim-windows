@@ -95,5 +95,8 @@ return require('packer').startup(function ()
   }
 
   use 'turbio/bracey.vim'
-  
+  use 'sheerun/vim-polyglot'
+  use 'alvan/vim-closetag'
+  use 'tpope/vim-commentary'
+
 end)

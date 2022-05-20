@@ -6,6 +6,11 @@ vim.g.mapleader = ' '
 
 mapper('i', '<Leader><Leader>', '<cmd>w <CR><Esc>')
 
+mapper('n', '<C-w>', ':w <CR>')
+mapper('n', '<C-q>', ':q <CR>')
+mapper('n', '<Leader><Right>', '20 <C-w>>')
+mapper('n', '<Leader><Left>', '20 <C-w><')
+
 -- Text editor
 mapper('n', '<C-a>', 'gg<S-v>G')
 mapper('n', '<leader>d', ':t. <CR>')
@@ -25,18 +30,11 @@ mapper("n", "<Leader>re", "<cmd>lua require('telescope.builtin').git_commits()<C
 mapper("n", "<Leader>qf", "<cmd>lua require('telescope.builtin').quickfix()<CR>") -- jump to items in quickfix list
 mapper("n", "H", "<cmd>lua require('telescope.builtin').lsp_code_actions(require('telescope.themes').get_cursor())<CR>") -- code actions
 
-
 -- nvim-tree
 
 mapper('n', '<C-n>', ':NvimTreeToggle <CR>')
 mapper('n', '<Leader>r', ':NvimTreeRefresh <CR>')
 mapper('n', '<Leader>n', ':NvimTreeFindFile <CR>')
--- mapper('n',  '<C-b>', ':vsplit <CR>')
-mapper('n', '<C-w>', ':w <CR>')
-mapper('n', '<C-q>', ':q <CR>')
--- mapper('n', '<Leader>\ ', ':Commentary <CR>')
-mapper('n', '<Leader><Right>', '20 <C-w>>')
-mapper('n', '<Leader><Left>', '20 <C-w><')
 
 mapper('n', '<C-z>', ':TSToggle highlight <CR>')
 

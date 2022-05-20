@@ -2,9 +2,6 @@ let mapleader = " "
 
 let g:user_emmet_leader_key=',' 	"mapeando la tecla lider por una coma, con esto se completa los tag con doble coma.
 
-" Commentary 
-nnoremap <space>\ :Commentary <CR>
-
 "Remap keys fot GoTos
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
