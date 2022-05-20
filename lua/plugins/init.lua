@@ -29,6 +29,8 @@ return require('packer').startup(function ()
       config = require "plugins.configs.treesitter"
   }
 
+  use 'neovim/nvim-lspconfig'
+
   use {
     "williamboman/nvim-lsp-installer",
       requires = {
@@ -94,6 +96,7 @@ return require('packer').startup(function ()
    -- tag = 'release' -- To use the latest release 
   }
 
+  use 'tpope/vim-fugitive'
   use 'turbio/bracey.vim'
   use 'sheerun/vim-polyglot'
   use 'alvan/vim-closetag'

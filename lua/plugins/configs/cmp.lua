@@ -143,9 +143,6 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
   require'lspconfig'['jsonls'].setup {
     capabilities = capabilities
   } 
-  require'lspconfig'['eslint'].setup {
-    capabilities = capabilities
-  } 
   require'lspconfig'['cssls'].setup {
     capabilities = capabilities
   } 
